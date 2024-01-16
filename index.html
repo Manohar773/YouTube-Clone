@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube Apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img class="current-user-picture" src="icons/Manohar.png">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <a href="https://youtu.be/0aCqlN9IbC4?si=5qWvEfwgAFeah4Dn">
+          <div class="thumbnail-row">
+            
+              <img class="thumbnail" src="thumbnails/Devara.webp">
+            
+            <div class="video-time">1:19</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Jr Ntr.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Devara Part 1 Glimpse - Kannada - NTR | Koratala Siva | Anirudh | 5 April 2024
+              </p>
+              <p class="video-author">
+                Jr NTR <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                3.4M views &#183; 2 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/IMtmpc5isnk?si=lVOJeoC_PCWH1jHB">
+          <div class="thumbnail-row">
+            
+              <img class="thumbnail" src="thumbnails/vanta thatha.webp">
+            
+            <div class="video-time">11:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/vanta thatha.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                బగరా బువ్వ - మటన్ కర్రీ || 1KG Bagara rice - Mutton curry || Food on...
+              </p>
+              <p class="video-author">
+                Food on Farm <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                390K views &#183; 12 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/0LeF_LTwDJY?si=wXqSiHIbmUUQ04hr">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/etv.webp">
+            <div class="video-time">2:56</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Etv.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Lakshadweep Vs Maldives | క్రమంగా తగ్గుతున్న మాల్దీవుల్లో పర్యాటించే...
+              </p>
+              <p class="video-author">
+                ETV Telangana <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                119K views &#183; 19 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/weFj-7A7hIk?si=GS-f3xCr9vugX2gj">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/guntur-karam.webp">
+            <div class="video-time">1:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/mahesh-babu.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Guntur Kaaram Making Video | Mahesh Babu | Trivikram | Sreeleela | Thaman S |
+              </p>
+              <p class="video-author">
+                Mahesh Babu <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                13K views &#183; 31 minutes ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/xOeGbJ2bYL0?si=DJ-FooUj_dufvCZF">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/zoho.webp">
+            <div class="video-time">6:28</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/zoho.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How is Zoho's Sridhar Vembu transforming Indian village economy by providing...
+              </p>
+              <p class="video-author">
+                Think School <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                450K views &#183; 2 year ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/L-W4G03rDpI?si=lzbRepVN1tLSavFG">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Tv9.jpg">
+            <div class="video-time">2:08</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Tv9.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                మోడీ పోటీ వెనుక గొప్ప లాజిక్ చెబుతున్న బీజేపీ -
+              </p>
+              <p class="video-author">
+                TV9 Shorts
+              </p>
+              <p class="video-stats">
+                150K views &#183; 8 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/led6b8M6_Pw?si=tRF53rFGlylBAwCT">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Thalapathi.jpg">
+            <div class="video-time">4:43</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Thalapathi.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Halamiti Habibo (Hindi) - Lyric Video | Beast | Thalapathy Vijay | Sun Pictures | Nelson |...
+              </p>
+              <p class="video-author">
+                Sun Marathi <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                22M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/JsY6tI4fvKo?si=FLLaGR-uqXFKZn8T">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Vanta.webp">
+            <div class="video-time">14:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Vanta.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Madurai Kari Dosai - Made Traditionally || 2 Mutton Recipes For Breakfast || The Traditional Life
+              </p>
+              <p class="video-author">
+                The Traditional Life <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                606K views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/xmW_C1XjhNE?si=vxDqcf1JgzItD87d">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Telugu-Rithu-Badi.jpg">
+            <div class="video-time">22:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Telugu-Ritu-Badi.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                200 గొర్రెలు పొట్టేలు పెంచుతున్నాం | Sheep Framing Telugu
+              </p>
+              <p class="video-author">
+                తెలుగు రీతుబడి <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                42K views &#183; 1 day ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/5FG5HBlnWZU?si=EHifs8830v_8RdB6">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Lokesh.jpg">
+            <div class="video-time">8:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Lokesh.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Nara Lokesh Unexpected Reply to Journalist Question Over Taraka Ratna Incident | News...
+              </p>
+              <p class="video-author">
+                News Buzz
+              </p>
+              <p class="video-stats">
+                45K views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/aiwqRLGAoTc?si=pS6lhPQz6Nhkyq1l">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Prasad-Life-Style.jpg">
+            <div class="video-time">13:52</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Prasad-Life-Style.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                మీరు ఈ తప్పు చయ్యకండి..&#129318; || My Transformation Journey From Fat To Fit ||...
+              </p>
+              <p class="video-author">
+                PrasadLifeStyle <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                378K views &#183; 4 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/1mSgKsCsxrM?si=YdV6ldBXSV7Rv4AX">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Prasad-babai.webp">
+            <div class="video-time">10:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Prasad-babai.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Tech News 1688 || Amazon & Flipkart Republic Day Sales,Realme 12...
+              </p>
+              <p class="video-author">
+                Prasadtechintelugu <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                151K views &#183; 15 hours ago
+              </p>
+            </div>
+          </div>
+          </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/m5ABqzR8wDs?si=laBOFfami1DcOFBT">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/BBC.webp">
+            <div class="video-time">3:06</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/BBC.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Sankranti ఎడ్ల పందాలు: జాత ఎడ్ల పోషణకు రోజు ఎంత ఖర్చు అవుతుంది,వీడికి ఎలాంటి మేత వేస్తారో...
+              </p>
+              <p class="video-author">
+                BBC News Telugu <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                2.5K views &#183; 2 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/bno03RUhMIY?si=Fe688UrI1XYJQI9v">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/apna-college.webp">
+            <div class="video-time">13:29</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/apna-college.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Data Analyst vs Data Scientist vs vs Data Engineer | Difference Explained
+              </p>
+              <p class="video-author">
+                Apna College <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                62K views &#183; 21 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/Z6Ys6EOqSbc?si=HdfX1SGoPpF4ZYgR">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/rohit.jpg">
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/rohit.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Rohit Sharma Fastest Century in T20 || Rohit Sharma 101 runs off 35 balls vs Srilanka
+              </p>
+              <p class="video-author">
+                Review Support
+              </p>
+              <p class="video-stats">
+                431K views &#183; 10 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/WlNdclgFh_A?si=Gn4ZbR1MO1YkMpO_">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Mad.jpg">
+            <div class="video-time">1:40:31</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Mad.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Mad Telugu Full Movie | Shoban, Narne Nithin, Ram Nithin
+              </p>
+              <p class="video-author">
+                Gaalisantha
+              </p>
+              <p class="video-stats">
+                18K views &#183; 2 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/G2RpHt8NX0o?si=yOmKAu4k2uT32sSW">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/react.jpg">
+            <div class="video-time">13:30</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/rea.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How to Master React in 2024(Complete Roadmap)
+              </p>
+              <p class="video-author">
+                Harkirat Singh <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                33K views &#183; 22 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/B0Ih1Dq12hA?si=F2_NXMcEkKhJxRRt">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Vanta thatha 2.webp">
+            <div class="video-time">11:27</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/vanta thatha.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                రాగి ముద్ద - చపల పులుసు || Ragi mudda - Fish curry || Fish recipe ||...
+              </p>
+              <p class="video-author">
+                Food on Farm <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                323K views &#183; 3 weeks ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="video-preview">
+          <a href="https://youtu.be/bMdOY480QUk?si=KZmE9x-8mMxpg08G">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Animal.webp">
+            <div class="video-time">4:35</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Animal.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                ANIMAL: Ammayi(Full Video) |Ranbir K,Rashmika | Raghav,Pritam Ananth...
+              </p>
+              <p class="video-author">
+                T-Series Telugu <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                50K views &#183; 11 hours ago
+              </p>
+            </div>
+            </div>
+            </a>
+          </div>
+          
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/iaoMfJbF8x8?si=KRlyezcqVvaQ5goY">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Unique.webp">
+            <div class="video-time">12:11</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Unique.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Kothagudem MeetUp Masala
+              </p>
+              <p class="video-author">
+                Unq Gamer <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                8.6K views &#183; 4 hours ago
+              </p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/afE7WD2raMw?si=SsGZK-EJ4V_c6250">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Fighter.webp">
+            <div class="video-time">3:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Animal.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                FIGHTER:Sher Khul Gaye (Lyrical) Hrithik,Deepika | Vishal...
+              </p>
+              <p class="video-author">
+                T-Series <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                127K views &#183; 5 hours ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/pLyTqnys2p8?si=0oLW4DfJDN8Fc0vs">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Karna.webp">
+            <div class="video-time">10:25</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Karna.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Insult to Karna in Swayamvaram | Lord Sri Krishna | Mahabharat | M ADVICE
+              </p>
+              <p class="video-author">
+                M ADVICE <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                281K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/VuA5HFr6rtU?si=lyTrqPTyvLSDaA9B">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/Hanuman.webp">
+            <div class="video-time">47:41</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/Hanuman.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Tasty TEJA meets TEJA Sajja || HanuMAN movie || Biggboss 7 || Pure veg with Teja Sajja ||...
+              </p>
+              <p class="video-author">
+                Tasty Teja <span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                707K views &#183; 8 days ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="video-preview">
+          <a href="https://youtu.be/56-EZEmJC2U?si=gG1OWa-OWJlSHl9c">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="thumbnails/freedom.webp">
+            <div class="video-time">12:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="channel-pictures/freedom.jpg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Dairy Farming in Telugu - How to Start a Dairy Farming? | Dairy Farming Benifits | Kowshik...
+              </p>
+              <p class="video-author">
+                ffreedom App - Money(Telugu)<span class="tick-mark">&#10003; </span>
+              </p>
+              <p class="video-stats">
+                328K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="copyright">
+        © 2023 Manohar Chowdary. All rights reserved. Designed and developed by Manohar Chowdary.
+      </div>
+    </footer>
+  </body>
+</html>
